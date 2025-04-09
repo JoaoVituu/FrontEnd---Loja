@@ -1,2 +1,2 @@
 # FrontEnd---Loja
- Projeto HTML incompleto de uma joja de jogos online
+ Projeto HTML incompleto de uma loja de jogos online
