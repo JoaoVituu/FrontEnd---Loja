@@ -1,0 +1,380 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+header {
+display: flex;
+position: relative;
+background-color: #2a2a2a;
+color: white;
+align-items: center;
+padding-left: 50px ;
+z-index: 4;
+}
+header > p {
+margin: 0 20px 0 10px;
+letter-spacing: 3px;
+font-weight: bolder;
+}
+header > nav {
+    display: flex;
+}
+#navesq {
+    display: flex;
+}
+#navesq > a {
+    text-decoration: none;
+    display: flex;
+    height: 75px;
+    color: #c8c8c8;
+    margin: 0 15px;
+    align-items: center;
+    letter-spacing: 2px;
+}
+#navesq > a:hover {
+    box-shadow: inset 0 -5px 0 #FC0D00;
+    color: white;
+}
+#navdir {
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+#idiomadiv {
+    width: 50px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+#idioma {
+    position: absolute;
+    height: 50px;
+}
+#idioma2 {
+    position: absolute;
+    display: flex;
+    height: 50px;
+    display: none;
+}
+#idiomadiv:hover > #idioma2{
+    display: flex;
+}
+#idioma:hover {
+    display: none;
+}
+#navdir > a {
+    text-decoration: none;
+    display: flex;
+    height: 75px;
+    color: #c8c8c8;
+    align-items: center;
+    letter-spacing: 2px;
+}
+#login {
+    margin: 0 15px;
+}
+#dowload {
+    padding-left: 15px;
+    background-color: #FC0D00;
+}
+#navdir> a > img {
+    height: 20px;
+    align-self: center;
+    padding-right: 10px;
+}
+#navdir > a:hover {
+    color: white;
+}
+main {
+    background-color:#121212;
+}
+#faixa {
+    width: 100%;
+    background-color: rgba(18, 18, 18, 0.9) ;
+    z-index: 2;
+    height: 150px;
+    position: fixed;
+    z-index: 3;
+    align-items: center;
+}
+#navegação {
+    align-items: center;
+    position: absolute;
+    display: flex;
+    right: 75px;
+    padding-top: 100px;
+}
+#pesquisa {
+    margin:0 30px ;
+    height: 30px ;
+    width: 250px;
+    background-color: #2a2a2a;
+    border-radius: 100px;    
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+#pesquisa > img{
+    height: 20px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    padding-left: 10px;
+}
+#pesquisa:hover {
+    color: #FC0D00;
+}
+#section0 {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+#destaque {
+    margin-top: 100px;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+}
+.principal {
+    width: 90%;
+    display: flex;
+}
+.imgprincipal {
+    background-image: url(../imagens/fallprincipal.png);
+    background-position: center center;
+    background-size: cover;
+    width: 90%;
+    margin: 5px;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+.fundo {
+    background-color: rgba(0, 0, 0, 0.30);
+    height: 100%;
+    width: 100%;    
+    border-radius: 10px;
+}
+.textoprincipal {
+    color: white;
+    flex-direction: column;
+    bottom: 0;
+    position: absolute;        
+    display: flex;
+    margin: 0 0 140px 35px;
+
+}
+.textoprincipal > p {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    margin: 10px 0;
+}
+.textoprincipal > h2 {
+    font-weight: normal;
+    font-size: 20px;
+}
+.botoes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.compra {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 23px;
+    text-align: center;
+    padding: 15px 30px ;
+    margin-right: 20px;
+}
+.desejos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+.desejos:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.desejos > p {
+    margin-left: 10px;
+}
+
+aside {
+    display: flex;
+    margin-top: 100px;
+    width: 15%;
+    flex-direction: column;
+}
+#article0 {
+    margin-left: 50px;
+    padding: 15px;
+    background-color: #2a2a2a;    
+    border-radius: 10px;
+}
+#article0 > article > a {
+    text-decoration: none;
+    color: #c8c8c8;
+    display: flex;
+    font-size: 18px ;
+    padding: 0 0 7px 0 ;
+}
+#article0 > article > a:hover {
+    color: white;
+}
+.aside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 0 5px 0;
+    width: 100%;
+}
+.aside > a {
+    text-decoration: none;
+    color: #c8c8c8;
+    display: flex;
+    font-size: 15px ;
+    padding: 0 0 7px 10px ;
+}
+.aside > a:hover {
+    color: white;
+}
+#article0 > article > h1 {
+    color: #FC0D00;
+    font-size: 20px;
+    font-weight: bold;
+}
+.aside > img {
+    height: 35px;
+}
+#section1 {
+    width: 95%;
+    padding: 25px 0 25px 35px;
+    display: flex;
+    flex-direction: column;
+}
+.exjogo0 {
+    margin: 0 30px;
+    padding-bottom: 25px;
+}
+.eximgjogo0 {
+    position: relative;
+}
+.acessar {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.eximgjogo0:hover > .acessar {
+    background-color: rgba(255, 255, 255, 0.20);
+}
+
+.exjogo0:hover > .eximgjogo0 > .mais {
+    display: flex;
+}
+.img0jogos {
+height: 300px;
+border-radius: 10px;
+}
+.extextojogo0 {
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.extitulojogo0 {
+    color: white;
+    padding: 10px 0 5px 0;
+}
+.exvaloresjogo0 {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.exdescontojogo0 {
+    padding: 2.5px 5px;
+    background-color: #FC0D00;
+    border-radius: 5px;
+    color: white;
+}
+.exprecosjogo0 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    color: white;
+}
+.precoantigo {
+    color: #c8c8c8;
+}
+#promocao {
+    color: white;
+    font-size: 15px;
+    margin: 0 auto 15px 75px;
+    position: relative;
+}
+#exposicao {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.mais {
+    height: 30px;
+    position: absolute;
+    display: none;
+    padding: 10px 10px 0 0;
+    right: 0;
+}
+
+
+footer {
+    background-color: #2a2a2a;
+    color: #c8c8c8;
+    padding: 20px 20px 15px 20px;
+}
+#sectionfooter0 {
+    display: flex;
+    padding-bottom: 25px;
+}
+#resto {
+    height: 35px;
+    margin: 0 10px;
+}
+#esq {
+    height: 35px;
+    margin: 0 10px 0 20px;
+}
+#sectionfooter1 {
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    border-top: 1px #3f3f3f solid;
+    position: relative;
+    height: 35px;
+}
+#voltartopo {
+    position: absolute;
+    right: 0;
+    align-self: center;
+}
+#sectionfooter1 > a > img {
+    height: 35px;
+}
+#navfooter1 > a {
+    text-decoration: none;
+    color: #c8c8c8;
+    padding: 0 10px;
+}

@@ -1,0 +1,548 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+body {
+    width: 100%;
+}
+header {
+display: flex;
+position: relative;
+background-color: #2a2a2a;
+color: white;
+align-items: center;
+z-index: 4;
+}
+#iconmenu{
+    cursor: pointer;
+    display: none;
+    margin: 25px;
+}
+#barra1, #barra2, #barra3 {
+    margin: 6px 0;
+    height: 5px;
+    width: 35px;
+    background-color: white;
+    transition: 0.5s;
+}
+.ativo > #barra1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+.ativo > #barra2 {
+    opacity: 0;
+}
+.ativo > #barra3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+#menu {
+    background-color: #2a2a2a;
+    display: flex;
+    align-items: center;
+    height: 75px;
+    padding: 0 20px 0 50px;
+    z-index: 6;
+}
+#logo {
+    display: flex;
+    align-items: center;
+}
+#menu > p {
+margin: 0 0 0 10px;
+letter-spacing: 3px;
+font-weight: bolder;
+}
+header > nav {
+    display: flex;
+}
+#navesq {
+    display: flex;
+}
+#navesq > a {
+    text-decoration: none;
+    display: flex;
+    height: 75px;
+    color: #c8c8c8;
+    margin: 0 15px;
+    align-items: center;
+    letter-spacing: 2px;
+}
+#navesq > a:hover {
+    box-shadow: inset 0 -5px 0 #FC0D00;
+    color: white;
+}
+#navdir {
+    display: flex;
+    position: absolute;
+    right: 0;
+    z-index: 5;
+    background-color: #2a2a2a;
+}
+#idiomadiv {
+    width: 50px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+#idioma {
+    position: absolute;
+    height: 50px;
+}
+#idioma2 {
+    position: absolute;
+    display: flex;
+    height: 50px;
+    display: none;
+}
+#idiomadiv:hover > #idioma2{
+    display: flex;
+}
+#idioma:hover {
+    display: none;
+}
+#navdir > a {
+    text-decoration: none;
+    display: flex;
+    height: 75px;
+    color: #c8c8c8;
+    align-items: center;
+    letter-spacing: 2px;
+}
+#login {
+    margin: 0 15px;
+}
+#dowload {
+    padding: 0 20px;
+    background-color: #FC0D00;
+}
+#navdir> a > img {
+    height: 20px;
+    align-self: center;
+    padding-right: 10px;
+}
+#navdir > a:hover {
+    color: white;
+}
+main {
+    background-color:#121212;
+    width: 100%;
+}
+#faixa {
+    width: 100%;
+    background-color: rgba(18, 18, 18, 0.9) ;
+    height: 150px;
+    position: fixed;
+    z-index: 3;
+    align-items: center;
+}
+#navegação {
+    align-items: center;
+    position: absolute;
+    display: flex;
+    right: 75px;
+    padding-top: 100px;
+}
+#pesquisa {
+    margin:0 30px ;
+    height: 30px ;
+    width: 250px;
+    background-color: #2a2a2a;
+    border-radius: 100px;    
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+#pesquisa > img{
+    height: 20px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    padding-left: 10px;
+}
+#pesquisa:hover {
+    color: #FC0D00;
+}
+#section0 {
+    display: flex;
+    position: relative;
+}
+#destaque {
+    width: 75%;
+    margin: 100px auto 0 auto;
+    display: flex;
+    justify-content: center;
+}
+#esconder0{
+    width: 1560px;
+    height: 399px;
+    overflow: hidden;
+    position: relative;
+}
+#conteiner0 {
+    display: flex;
+    overflow-x: scroll;
+    flex-direction: row;
+}
+#imgprincipal0 {
+    background-image: url(../imagens/fallprincipal.png);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: relative;
+    flex-direction: row;
+    display: flex;
+    margin: 0 10px;
+}
+#imgprincipal1 {
+    background-image: url(../imagens/eldenring.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: relative;
+    flex-direction: row;
+    display: flex;
+    margin: 0 10px;
+}
+#imgprincipal2 {
+    background-image: url(../imagens/fifa.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: relative;
+    flex-direction: row;
+    display: flex;
+    margin: 0 10px;
+}
+#imgprincipal3 {
+    background-image: url(../imagens/lostinplay.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: relative;
+    flex-direction: row;
+    display: flex;
+    margin: 0 10px;
+}
+#imgprincipal4 {
+    background-image: url(../imagens/genshin.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: relative;
+    flex-direction: row;
+    display: flex;
+    margin: 0 10px;
+}
+.fundo {
+    background-color: rgba(0, 0, 0, 0.30);
+    height: 100%;
+    width: 100%;    
+    border-radius: 10px;
+    position: absolute;
+}
+.textoprincipal {
+    color: white;
+    flex-direction: column;
+    bottom: 0;
+    position: absolute;        
+    display: flex;
+    margin: 0 0 50px 35px;
+
+}
+.textoprincipal > p {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    margin: 10px 0;
+}
+.textoprincipal > h2 {
+    font-weight: normal;
+    font-size: 20px;
+}
+.botoes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.setas {
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    z-index: 1;
+    
+}
+.compra {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 23px;
+    text-align: center;
+    padding: 15px 30px ;
+    margin-right: 20px;
+}
+.desejos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+.desejos:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.desejos > p {
+    margin-left: 10px;
+}
+#caixaprincipal {
+    width: 100%;
+    height: 100%;
+}
+#principal {
+    width: 100%;
+    height: 100%;
+}
+aside {
+    display: flex;
+    margin-top: 100px;
+    width: 15%;
+    flex-direction: column;
+}
+#article0 {
+    margin-left: 50px;
+    padding: 15px;
+    background-color: #2a2a2a;    
+    border-radius: 10px;
+}
+#article0 > article > a {
+    text-decoration: none;
+    color: #c8c8c8;
+    display: flex;
+    font-size: 18px ;
+    padding: 0 0 7px 0 ;
+}
+#article0 > article > a:hover {
+    color: white;
+}
+.aside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 0 5px 0;
+    width: 100%;
+}
+.aside > a {
+    text-decoration: none;
+    color: #c8c8c8;
+    display: flex;
+    font-size: 15px ;
+    padding: 0 0 7px 10px ;
+}
+.aside > a:hover {
+    color: white;
+}
+#article0 > article > h1 {
+    color: #FC0D00;
+    font-size: 20px;
+    font-weight: bold;
+}
+.aside > img {
+    height: 35px;
+}
+#section1 {
+    padding: 25px 0 25px 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.exjogo0 {
+    margin: 0 30px;
+    padding-bottom: 25px;
+}
+.eximgjogo0 {
+    position: relative;
+}
+.acessar {
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+}
+.eximgjogo0:hover > .acessar {
+    background-color: rgba(255, 255, 255, 0.20);
+}
+
+.exjogo0:hover > .eximgjogo0 > .mais {
+    display: flex;
+}
+.img0jogos {
+height: 300px;
+border-radius: 10px;
+}
+.extextojogo0 {
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.extitulojogo0 {
+    color: white;
+    padding: 10px 0 5px 0;
+}
+.exvaloresjogo0 {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.exdescontojogo0 {
+    padding: 2.5px 5px;
+    background-color: #FC0D00;
+    border-radius: 5px;
+    color: white;
+}
+.exprecosjogo0 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    color: white;
+}
+.precoantigo {
+    color: #c8c8c8;
+}
+#promocao {
+    color: white;
+    font-size: 15px;
+    margin: 0 0 15px 75px;
+    position: relative;
+    width: 300px;
+}
+#exposicao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+.mais {
+    height: 30px;
+    position: absolute;
+    display: none;
+    padding: 10px 10px 0 0;
+    right: 0;
+    border-radius: 10px;
+}
+#fundodireita {
+    height: 399px;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    margin-left:-25px ;
+}
+#fundoesquerda {
+    height: 399px;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    margin-right:-25px ;
+}
+footer {
+    background-color: #2a2a2a;
+    color: #c8c8c8;
+    padding: 20px 20px 15px 20px;
+}
+#sectionfooter0 {
+    display: flex;
+    padding-bottom: 25px;
+}
+#resto {
+    height: 35px;
+    margin: 0 10px;
+}
+#esq {
+    height: 35px;
+    margin: 0 10px 0 20px;
+}
+#sectionfooter1 {
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    border-top: 1px #3f3f3f solid;
+    position: relative;
+    height: 35px;
+}
+#voltartopo {
+    position: absolute;
+    right: 0;
+    align-self: center;
+}
+#sectionfooter1 > a > img {
+    height: 35px;
+}
+#navfooter1 > a {
+    text-decoration: none;
+    color: #c8c8c8;
+    padding: 0 10px;
+}
+#caixaprincipal {
+    position: relative;
+}
+#submenu {
+    margin-left: -100%;
+}
+@media (max-width: 1700px){
+    aside {
+        display: none;
+    }
+    #destaque {
+        width: 90%;
+        height: 500px;
+    }
+}
+@media (max-width: 1200px){
+    header > nav {
+        margin-left: -100%;
+        transition: all 1s;
+    }
+    #navdir {
+        left: -1;
+    }
+    #iconmenu {
+        display: inline-block ;
+    }
+    #logo{
+        position: relative;
+        margin: 0 auto;
+    }
+    #menu {
+        width: 100%;
+    }
+    #navegação {
+        right: 0;
+        left: 45px;
+    }
+    #destaque {
+        width: 90%;
+        height: 400px;
+    }
+
+}
